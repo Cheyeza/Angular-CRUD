@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row row-cols-6">
+      <div class="col cards" *ngFor="let item of list"> 
+        <div class="card" style="width: 18rem;">
+            <img src={{item.image}} class="card-img-top" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{item.title}}</h5>
+              <p class="card-text">{{item.description}}</p>
+              <h1>price: R {{item.price}}</h1>
+              <a href="#" class="btn btn-primary">View item</a>
+            </div>
+          </div>
+      </div>
+    
+    </div>
+  </div>
